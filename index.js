@@ -2,13 +2,12 @@ const daysUntilPagerCon = require('./daysUntilPagerCon');
 const helpers = require('./lib/helpers');
 const Botkit = require('botkit');
 const greetings = ['Howdy!', 'Hello!', 'Sup?', 'Yo!'];
-var token = "xoxb-203798799575-emksNaHNjf22UpmHtI3aDjyF";
 var controller = Botkit.slackbot({
   token: token
 });
 
 controller.spawn({
-  token: token
+  token: process.env.token
 }).startRTM(function(err) {
   if (err) {
     throw new Error(err);
