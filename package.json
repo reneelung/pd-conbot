@@ -1,0 +1,8 @@
+{
+	"name": "pd-conbot",
+	"description": "A snarky Slackbot for PagerCon",
+	"version": "1.0.0",
+	"engines": {
+		"node": "7.10.0"
+	}
+}
