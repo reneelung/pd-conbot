@@ -3,7 +3,7 @@ const helpers = require('./lib/helpers');
 const Botkit = require('botkit');
 const greetings = ['Howdy!', 'Hello!', 'Sup?', 'Yo!'];
 var controller = Botkit.slackbot({
-  token: token
+  token: process.env.token
 });
 
 controller.spawn({
